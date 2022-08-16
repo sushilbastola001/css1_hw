@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main__text {
+        margin: 0rem 3rem 0;
+      }
+      .text1 {
+        margin-top: 3rem;
+      }
+      .main__box1 {
+        background-color: aqua;
+        margin: 3rem;
+      }
+      .box2 {
+        padding: 3rem;
+      }
+      .main--box2 {
+        background-color: red;
+        margin: 3rem 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="main__text text1">
+        <h3>Margin with one value</h3>
+        <p>
+          Margin with one value is specified if you want same margin
+          specification in all sides.
+        </p>
+      </div>
+      <div class="main__box1">
+        <div class="box2">
+          <p>This is for padding with one value.</p>
+        </div>
+      </div>
+      <div class="main__text">
+        <h3>Margin with two value</h3>
+        <p>
+          Margin with two value is specified if you want different margin
+          specification for Top & Bottom and Left & Right sides. First value for
+          Top & Bottom and second value for Left & Right side.
+        </p>
+      </div>
+      <div class="main__box1 main--box2">
+        <div class="box2 box2--box2">
+          <p>This is for padding with two value.</p>
+        </div>
+      </div>
+      <div class="main__text">
+        <h3>Margin with three value</h3>
+        <p>
+          Margin with three value is specified if you want different margin
+          specification for Top, Left&Right, and Bottom sides. First value is
+          for Top, second value is for Left & Right and third value is for
+          Bottom side.
+        </p>
+      </div>
+      <div class="main__box1 main--box3">
+        <div class="box2 box3--box3">
+          <p>This is for padding with three value.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
